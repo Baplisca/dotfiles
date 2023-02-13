@@ -1,0 +1,5 @@
+[user]
+	name = Your name
+	email = Your company email
+[includeIf "gitdir:~/private/**"]
+	path = ~/dotfiles/.gitconfig_private
