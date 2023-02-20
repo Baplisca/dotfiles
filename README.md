@@ -7,10 +7,10 @@ my custom dotfiles
 ```bash
 git clone git@github.com:Baplisca/dotfiles.git
 
-rm ~/.bashrc ~/.gitconfig
+rm ~/.bashrc ~/.zshrc ~/.gitconfig
 ln -s ~/dotfiles/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
-rm ~/.gitconfig
 [add your github name and personal email]
 vi ~/dotfiles/.gitconfig_private
 
