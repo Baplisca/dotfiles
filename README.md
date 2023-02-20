@@ -6,7 +6,10 @@ my custom dotfiles
 
 ```bash
 git clone git@github.com:Baplisca/dotfiles.git
+cd ~/dotfiles
 
+curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+cat ~/.git-prompt.sh
 rm ~/.bashrc ~/.zshrc ~/.gitconfig
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
