@@ -1,5 +1,14 @@
 [alias]
     a = add
-    b = branch
-    c = checkout
+    br = branch
+    brm = branch -m
+    ch = checkout
+    chb = checkout -b
     cm = commit -m
+    f = fetch
+    logo = log --oneline
+    m = merge
+    p = pull
+    st = stash
+    stp = stash pop
+
