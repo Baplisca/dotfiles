@@ -6,6 +6,7 @@
     chb = checkout -b
     cm = commit -m
     f = fetch
+    g = grep
     logo = log --oneline
     m = merge
     p = pull
