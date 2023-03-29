@@ -6,10 +6,12 @@
     chb = checkout -b
     cm = commit -m
     f = fetch
-    g = grep
+    gr = grep
     logo = log --oneline
     m = merge
     p = pull
     st = stash
     stp = stash pop
 
+[grep]
+  lineNumber = true
