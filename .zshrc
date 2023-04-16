@@ -8,3 +8,6 @@ alias reload='source ~/.zshrc'
 source ~/.git-prompt.sh
 precmd () { __git_ps1 "[%n@%m %* %~" "]%(!.#.\$) " }
 setopt no_beep
+
+# ヒストリの重複削除
+setopt hist_ignore_all_dups  
