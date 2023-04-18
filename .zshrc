@@ -15,5 +15,11 @@ source ~/.git-prompt.sh
 precmd () { __git_ps1 "[%n@%m %* %~" "]%(!.#.\$) " }
 setopt no_beep
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000      
+SAVEHIST=10000
+# 補完候補を詰めて表示
+setopt list_packed
+
 # ヒストリの重複削除
 setopt hist_ignore_all_dups 
