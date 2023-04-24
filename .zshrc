@@ -5,6 +5,7 @@ alias g='git'
 alias n='npm'
 alias today="date +%Y%m%d"
 alias reload='source ~/.zshrc'
+alias tmux_reload='tmux source ~/.tmux.conf'
 # historyに日付表示
 alias h='fc -lt '%F %T' 1'
 alias v='vim'
