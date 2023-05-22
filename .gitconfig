@@ -4,6 +4,7 @@
     brm = branch -m
     ch = checkout
     chb = checkout -b
+    cl = clone
     cm = commit -m
     f = fetch
     gr = grep
