@@ -1,5 +1,5 @@
-" 行番号の表示
+" Show line numbers
 set nu
 
-
+set autoindent
 
