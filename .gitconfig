@@ -5,6 +5,7 @@
     ch = checkout
     chb = checkout -b
     cl = clone
+    cam = commit --amend -m
     cm = commit -m
     f = fetch
     gr = grep
