@@ -11,7 +11,8 @@
     gr = grep
     logo = log --oneline
     m = merge
-    p = pull
+    pl = pull
+    ps = push
     st = stash
     stp = stash pop
 
