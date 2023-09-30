@@ -1,6 +1,7 @@
 # dotfiles
 
-my custom dotfiles
+- my custom dotfiles
+- Using this will increase work efficiency 🔥
 
 ## Setup
 
@@ -13,7 +14,7 @@ cat ~/.git-prompt.sh
 chmod +x setup.sh
 ./setup.sh
 
-[add your github name and personal email]
+# add your github name and personal email
 vi ~/dotfiles/.gitconfig_private
 
 [private use]
@@ -23,6 +24,6 @@ cat ~/.gitconfig
 [company use]
 ln -sf ~/dotfiles/.gitconfig_company ~/.gitconfig
 cat ~/.gitconfig
-[add name and company email]
+# add official name and company email
 vi ~/dotfiles/.gitconfig_company
 ```
