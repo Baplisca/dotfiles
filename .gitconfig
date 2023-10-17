@@ -1,6 +1,6 @@
 [alias]
     a = add
-    br = branch
+    br = branch --sort=-committerdate
     brm = branch -m
     ch = checkout
     chb = checkout -b
