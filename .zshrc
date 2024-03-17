@@ -5,6 +5,7 @@ export PATH=$PATH:~/bin
 export PATH=/usr/local/bin:$PATH
 
 alias g='git'
+alias k='kubectl'
 alias n='npm'
 alias today="date +%Y%m%d"
 alias reload='source ~/.zshrc'
