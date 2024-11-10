@@ -28,13 +28,14 @@ setopt list_packed
 # ヒストリの重複削除
 setopt hist_ignore_all_dups 
 
+# 環境ごとで読み込むBrewfileを出し分けたい
 BREWFILE="$HOME/.Brewfile"
 function brew-bundle-dump() {
   # --forceオプションをつけて、ファイルが存在したときは上書きする
   command brew bundle dump --file "$BREWFILE" --force
 }
 
-# シェル関数brewは、実行ファイルbrewよりも優先される
+# このシェル関数brewは、実行ファイルbrewよりも優先される
 brew() {
   # シェル関数brewではなく実行ファイルbrewを実行する
   command brew $@

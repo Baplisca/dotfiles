@@ -4,6 +4,8 @@
 
 [include]
 	path = ~/dotfiles/.gitconfig
-		
+
+# privateディレクトリ配下にプロジェクトがある場合のみ、.gitconfig_privateを適用。privateは個人開発用フォルダ
+# (e.g. ls ~/private/hogehoge)		
 [includeIf "gitdir:~/private/**"]
 	path = ~/dotfiles/.gitconfig_private

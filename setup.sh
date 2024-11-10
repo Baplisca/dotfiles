@@ -19,6 +19,7 @@ git ls-files | grep -e '^\.' | while read DOTFILE; do
   fi
 done
 
+# 環境ごとで読み込むBrewfileを出し分けたい
 BREWFILE=~/.Brewfile
 if [ -e "${BREWFILE}" ]; then
   echo "Install Homebrew packages all at once"
