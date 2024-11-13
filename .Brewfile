@@ -19,7 +19,6 @@ brew "k9s"
 brew "openjpeg"
 brew "leptonica"
 brew "maven"
-brew "mysql@5.7", restart_service: true
 brew "nodebrew"
 brew "python@3.11"
 brew "pipenv"
