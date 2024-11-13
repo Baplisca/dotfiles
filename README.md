@@ -3,6 +3,11 @@
 - my custom dotfiles
 - Using this will increase work efficiency 🔥
 
+## Pre Setup
+```bash
+# download brew from `https://brew.sh/ja/`
+```
+
 ## Setup
 
 ```bash
