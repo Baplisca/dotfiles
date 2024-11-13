@@ -3,6 +3,8 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH=$PATH:~/bin
 export PATH=/usr/local/bin:$PATH
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 alias g='git'
 alias k='kubectl'
