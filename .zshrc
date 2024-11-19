@@ -2,6 +2,8 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH=$PATH:~/bin
 export PATH=/usr/local/bin:$PATH
+
+# To avoid k9s bug (https://github.com/derailed/k9s/issues/2602#issuecomment-1984103935)
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
@@ -20,9 +22,11 @@ source ~/.git-prompt.sh
 precmd () { __git_ps1 "[%n@%m %* %~" "]%(!.#.\$) " }
 setopt no_beep
 
-HISTFILE=~/.zsh_history
-HISTSIZE=10000      
-SAVEHIST=10000
+# history
+HISTFILE=~/.zsh_history # 履歴を保存するファイル
+HISTSIZE=100000             # メモリ上に保存する履歴のサイズ
+SAVEHIST=1000000            # 上述のファイルに保存する履歴のサイズ
+
 # 補完候補を詰めて表示
 setopt list_packed
 
@@ -44,7 +48,7 @@ brew() {
   brew-bundle-dump
 }
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
