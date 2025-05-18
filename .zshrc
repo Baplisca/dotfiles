@@ -25,7 +25,7 @@ alias vz='vim ~/.zshrc'
 
 source ~/zshrc/kube-ps1.sh
 # PROMPT='$(kube_ps1)'$PROMPT
-PROMPT='$(kube_ps1)%n@%m %1~ %# '
+PROMPT='$(kube_ps1)[%n@%m %* %~]%(!.#.\$) '
 KUBE_PS1_SYMBOL_ENABLE=false
 
 
