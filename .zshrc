@@ -12,7 +12,7 @@ alias g='git'
 alias k='kubectl'
 alias n='npm'
 alias today="date +%Y%m%d"
-alias reload='source ~/.zshrc'
+alias reload='exec zsh'
 alias tmux_reload='tmux source ~/.tmux.conf'
 alias hg='history | grep'
 alias v='vim'
@@ -24,8 +24,10 @@ alias vz='vim ~/.zshrc'
 # precmd () { __git_ps1 "[%n@%m %* %~" "]%(!.#.\$) " }
 
 source ~/zshrc/kube-ps1.sh
-PROMPT='$(kube_ps1)'$PROMPT
+# PROMPT='$(kube_ps1)'$PROMPT
+PROMPT='$(kube_ps1)%n@%m %1~ %# '
 KUBE_PS1_SYMBOL_ENABLE=false
+
 
 setopt no_beep
 
