@@ -2,6 +2,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH=$PATH:~/bin
 export PATH=/usr/local/bin:$PATH
+export PATH="/usr/bin:$PATH"
 
 # To avoid k9s bug (https://github.com/derailed/k9s/issues/2602#issuecomment-1984103935)
 export LANG="en_US.UTF-8"
@@ -18,8 +19,14 @@ alias v='vim'
 alias vi='vim'
 alias vz='vim ~/.zshrc'
 
-source ~/.git-prompt.sh
-precmd () { __git_ps1 "[%n@%m %* %~" "]%(!.#.\$) " }
+# kube-ps1.shと競合するため、git-promptはコメントアウト
+# source ~/zshrc/.git-prompt.sh
+# precmd () { __git_ps1 "[%n@%m %* %~" "]%(!.#.\$) " }
+
+source ~/zshrc/kube-ps1.sh
+PROMPT='$(kube_ps1)'$PROMPT
+KUBE_PS1_SYMBOL_ENABLE=false
+
 setopt no_beep
 
 # history

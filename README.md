@@ -4,6 +4,7 @@
 - Using this will increase work efficiency 🔥
 
 ## Pre Setup
+
 ```bash
 # download brew from `https://brew.sh/ja/`
 ```
@@ -14,9 +15,15 @@
 git clone git@github.com:Baplisca/dotfiles.git
 cd ~/dotfiles
 
-# Download git-prompt.sh
-curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-cat ~/.git-prompt.sh
+# Download git-prompt.sh or kube-ps1.sh (競合するのでどちらかインストールする)
+mkdir -p ~/zshrc
+## git-prompt.sh (家用)
+curl -o ~/zshrc/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+cat ~/zshrc/.git-prompt.sh
+
+## kube-ps1.sh (仕事用)
+curl -o ~/zshrc/kube-ps1.sh https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh
+cat ~/zshrc/kube-ps1.sh
 
 # This completes the setup (.Brewfile, .bashrc, .tmux.conf, .vimrc, .zshrc)
 chmod +x setup.sh
