@@ -18,6 +18,7 @@ alias hg='history | grep'
 alias v='vim'
 alias vi='vim'
 alias vz='vim ~/.zshrc'
+alias kx='kubectx | peco | xargs -I {} kubectx "{}"'
 
 # kube-ps1.shと競合するため、git-promptはコメントアウト
 # source ~/zshrc/.git-prompt.sh
@@ -62,8 +63,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# pyenv setting
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
